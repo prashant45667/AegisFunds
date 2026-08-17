@@ -248,8 +248,8 @@ All onboarded testers are required to submit their feedback via the Google Form.
 9. **Would you recommend this product to others?** (Required)
 10. **What improvements would you like to see?** (Required)
 
-*   **Feedback Form Link**: [Google Form Feedback Link](https://docs.google.com/forms/d/1-unjNsP5OzAESlHGkuoQBL9c3ZnG40KaNeHT-B4uEYY/viewform)
-*   **Excel Export / Responses Sheet**: [Excel Feedback Responses](https://docs.google.com/spreadsheets/d/1mlCpVn_BjrrU_yev91L6Pw2tY5rI1Gajb2WAStx9h9g/edit?usp=sharing)
+*   **Feedback Form Link**: [Google Form Feedback Link](https://docs.google.com/forms/d/1Kx2lBNVd8E4IElMWg1bYa99yuVVulNBXa70_si6xcNw/viewform)
+*   **Excel Export / Responses Sheet**: [Excel Feedback Responses](https://docs.google.com/spreadsheets/d/1u66OStCGq-1l5MdMBfApQkTr-exKZokqPFQ_jlVCBRY/edit?usp=sharing)
 
 ### Onboarding Tracking Checklist (Target: 50+ Testnet Users)
 
