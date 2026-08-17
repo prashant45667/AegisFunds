@@ -542,7 +542,7 @@ Based on feedback collected from our testnet community during the Level 5 upgrad
 
 *   **Product Interface**: ![alt text](image.png)
 *   **Mobile Responsiveness**: ![alt text](image-1.png)
-*   **CI/CD Workflow**: ![Placeholder for new August screenshot](image-placeholder.png)
+*   **CI/CD Workflow**: ![alt text](image-2.png)
 
 
 
