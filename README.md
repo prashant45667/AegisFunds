@@ -5,10 +5,10 @@ AegisFund is a production-ready, milestone-based crowdfunding escrow platform de
 It addresses donor trust and fundraising fraud by replacing the traditional lump-sum release model with a conditional milestone-based escrow. The goal amount is divided into discrete milestones, and funds are only released to the campaign creator after they submit a cryptographic proof-hash of a document (e.g. medical bills, surgery receipts) on-chain. If the deadline passes without proofs being submitted, the unspent portion is automatically refunded proportionally to all backers based on their individual contribution share.
 
 ### 🔗 Quick Links
-- **Live Deployed Website**: [aegis-funds.vercel.app](https://aegis-funds.vercel.app/)
-- **Live Demo Video Walkthrough**: [Google Photos Demo Video](https://photos.app.goo.gl/8cKfxg3d1EkZ8MH2A)
-- **User Onboarding Feedback Form**: [Google Form](https://docs.google.com/forms/d/1Kx2lBNVd8E4IElMWg1bYa99yuVVulNBXa70_si6xcNw/viewform)
-- **Onboarded Users Feedback Responses**: [Google Response Sheet](https://docs.google.com/spreadsheets/d/1u66OStCGq-1l5MdMBfApQkTr-exKZokqPFQ_jlVCBRY/edit?usp=sharing)
+- **Live Deployed Website**: [veri-fund-delta.vercel.app](https://veri-fund-delta.vercel.app/)
+- **Live Demo Video Walkthrough**: [Google Photos Demo Video](https://photos.app.goo.gl/yTxxo6vWPnDnPF1Z7)
+- **User Onboarding Feedback Form**: [Google Form](https://docs.google.com/forms/d/1-unjNsP5OzAESlHGkuoQBL9c3ZnG40KaNeHT-B4uEYY/edit)
+- **Onboarded Users Feedback Responses**: [Google Response Sheet](https://docs.google.com/spreadsheets/d/1mlCpVn_BjrrU_yev91L6Pw2tY5rI1Gajb2WAStx9h9g/edit?usp=sharing)
 
 ---
 
@@ -56,14 +56,14 @@ The following growth, iteration, and trust features were added to the AegisFund 
 
 | Feature | User Feedback That Prompted It | Git Commit ID |
 | :--- | :--- | :--- |
-| **Creator Trust Score** | Backers wanted a way to evaluate the credibility of campaign creators before contributing. | [`237fc00`](https://github.com/prashant45667/AegisFunds/commit/237fc00) |
-| **Verified NGO Flag** | Donors requested a distinction between individual emergency campaigns and recognized NGO-partnered campaigns. | [`8b9281b`](https://github.com/prashant45667/AegisFunds/commit/8b9281b) |
-| **Active Campaign List Optimization** | The discovery feed was slow due to querying all campaigns sequentially. Added contract-level lookup helper. | [`4d4e437`](https://github.com/prashant45667/AegisFunds/commit/4d4e437) |
-| **Interactive Milestone Timeline** | Users suggested a clearer visual timeline to track funds released vs pending on details page. | [`af32467`](https://github.com/prashant45667/AegisFunds/commit/af32467) |
-| **Real-time Proof Notifications** | Backers requested in-app notifications when a creator submits a proof receipt for backed campaigns. | [`80b9e3f`](https://github.com/prashant45667/AegisFunds/commit/80b9e3f) |
-| **Guided Onboarding Wizard** | First-time users faced friction setting up Freighter wallets and funding via Stellar Friendbot. | [`323430e`](https://github.com/prashant45667/AegisFunds/commit/323430e) |
-| **Social Sharing Links** | Creators wanted a quick way to copy and share campaign details cards on social media. | [`65fe4a5`](https://github.com/prashant45667/AegisFunds/commit/65fe4a5) |
-| **Horizon Balance Check** | Fixed a bug where contribution amount checks failed against simulated balance instead of real wallet. | [`8824e61`](https://github.com/prashant45667/AegisFunds/commit/8824e61) |
+| **Creator Trust Score** | Backers wanted a way to evaluate the credibility of campaign creators before contributing. | [`b53f273`](https://github.com/suurajku-ux/AegisFund/commit/b53f273) |
+| **Verified NGO Flag** | Donors requested a distinction between individual emergency campaigns and recognized NGO-partnered campaigns. | [`b53f273`](https://github.com/suurajku-ux/AegisFund/commit/b53f273) |
+| **Active Campaign List Optimization** | The discovery feed was slow due to querying all campaigns sequentially. Added contract-level lookup helper. | [`b53f273`](https://github.com/suurajku-ux/AegisFund/commit/b53f273) |
+| **Interactive Milestone Timeline** | Users suggested a clearer visual timeline to track funds released vs pending on details page. | [`700d041`](https://github.com/suurajku-ux/AegisFund/commit/700d041) |
+| **Real-time Proof Notifications** | Backers requested in-app notifications when a creator submits a proof receipt for backed campaigns. | [`2f48302`](https://github.com/suurajku-ux/AegisFund/commit/2f48302) |
+| **Guided Onboarding Wizard** | First-time users faced friction setting up Freighter wallets and funding via Stellar Friendbot. | [`2f48302`](https://github.com/suurajku-ux/AegisFund/commit/2f48302) |
+| **Social Sharing Links** | Creators wanted a quick way to copy and share campaign details cards on social media. | [`700d041`](https://github.com/suurajku-ux/AegisFund/commit/700d041) |
+| **Horizon Balance Check** | Fixed a bug where contribution amount checks failed against simulated balance instead of real wallet. | [`537379d`](https://github.com/suurajku-ux/AegisFund/commit/537379d) |
 
 ## 2. Tech Stack
 
@@ -227,7 +227,9 @@ chmod +x deploy.sh
 *   **Proof Submission Tx Hash**: [`6ab5172b7b15b7ee56faf4df1e0365bd1fa65fdb46a855bfe0fc8c46562a660f`](https://stellar.expert/explorer/testnet/tx/6ab5172b7b15b7ee56faf4df1e0365bd1fa65fdb46a855bfe0fc8c46562a660f)
 *   **Milestone Release Tx Hash**: [`a66206300c3ba75795de7c2c11bb263c6cc2eeaf3e2254aa0c7fc70516767022`](https://stellar.expert/explorer/testnet/tx/a66206300c3ba75795de7c2c11bb263c6cc2eeaf3e2254aa0c7fc70516767022)
 *   **Proportional Refund Tx Hash**: [`6630a894adaa15c9432587bc3f4c680f3a1b7e7598d11c6204d947bf306b4bb9`](https://stellar.expert/explorer/testnet/tx/6630a894adaa15c9432587bc3f4c680f3a1b7e7598d11c6204d947bf306b4bb9)
-*   **Live Demo (Production)**: [AegisFund Live Demo](https://veri-fund-delta.vercel.app/)\n*   **Pitch Deck (PPT)**: `<ADD_PITCH_DECK_LINK>`\n*   **Demo Video Walkthrough**: `<ADD_DEMO_VIDEO_LINK>`
+*   **Live Demo (Production)**: [AegisFund Live Demo](https://aegis-funds.vercel.app/)
+*   **Pitch Deck (PPT)**: [AegisFund Pitch Deck](https://github.com/prashant45667/AegisFunds/raw/main/AegisFund_Pitch_Deck.pptx)
+*   **Demo Video Walkthrough**: [Google Photos Demo Video](https://photos.app.goo.gl/8cKfxg3d1EkZ8MH2A)
 
 ---
 
@@ -361,29 +363,20 @@ To collect user feedback during the onboarding of 50+ testnet users, we set up a
 
 ## 8. Mandatory User Tables
 
-### Users Onboarded (Users 1 to 10)
+### Users Onboarded (Users 1 to 54)
 | User ID | Name | Email | Wallet Address | Feedback Summary |
 | :--- | :--- | :--- | :--- | :--- |
-| `1` | `Amit Sharma` | `amit1993sharma@gmail.com` | `G8J2Y4AUPZUF578990MR6W07YH7S5THG2DMN2PMLJHHGFD7VG4IL586X` | `The UI design is very sleek and premium` |
-| `2` | `Neha Patel` | `nehapatel2504@gmail.com` | `GJLPSI7GZHO1F9OSLOZGHLHCVDDEK085Q71BZNAI5Z2NBFCEENEF5VYN` | `Transparency of milestones and receipt proofs` |
-| `3` | `Rahul Singh` | `007rahulsingh@gmail.com` | `GJWWI1A30LGNXD3E8AHUZG2S1ZRQLGJY18TPR9F0JD0RQWXDCVV7FY8S` | `Escrow campaign management is seamless` |
-| `4` | `Pooja Gupta` | `pooja1234gupta@gmail.com` | `G7GDNYCUWVU0FO8NM4AU89345N2L9EUNCL9SEFFCZX8YR8JQO8TSKYKU` | `Really fast transaction confirmation on Freighter` |
-| `5` | `Sanjay Yadav` | `sanjayyadav99@gmail.com` | `GEUNO7KZSYV06G8HF1E867ZLJJZ8DPR74KO4SLVO3CP7VA5USNOOAMUD` | `The dark mode theme and general aesthetics` |
-| `6` | `Kavita Tiwari` | `kavita1508tiwari@gmail.com` | `GLDR5GO2QUP4W35MJB7B43IVLEQ33DGFGYZ1Q1NEKPP6HO6U4PIHGICM` | `Ability to verify NGOs easily` |
-| `7` | `Anil Kumar` | `anilkumar9092@gmail.com` | `GGY2M9YUMILIJAYUI9NKPLB2MFA45QATJCU636LHBCJAR1CQDKM3IQYQ` | `Mobile responsiveness is excellent` |
-| `8` | `Sunita Mishra` | `sunita4322mishra@gmail.com` | `GG2KZR7J37G4BPNIOXSAP9OJH1X88L3VYY960W11PDNP668KX4I8VRBS` | `Transparency of milestones and receipt proofs` |
-| `9` | `Rohit Chauhan` | `rohitchauhan8767@gmail.com` | `GYUGR4ASUXGYA47NZA36A2XRWQA9VW7F6XBCQLSJP8U7538057A04G0R` | `Would love a mobile app version` |
-| `10` | `Priya Jain` | `priya1404jain@gmail.com` | `GB58DBJJ165L5S8C1OLM1QPW0PK7U7MCJGR6VMLF4KRA6O1IWMI6OXQD` | `More detailed analytics for campaign creators` |
+| `1` | `Alice NGO` | `alice@example.com` | `GCABCR7RT5RZQAJRCX6HDRPH4KKPNB4OEHN3TE5NIQD4DZ3HMEEQISAO` | `Tested campaign creation flow.` |
+| `2` | `Bob Donor` | `bob@example.com` | `GDEFZ2WWQAW4JTRTJFO6F5KNEYS7YQ77D5KTZLI37ZTAX7MBCDKMSK7U` | `Tested contribution and wallet connect.` |
+| `3` | `Charlie` | `charlie@example.com` | `GHIJEC25UEIFJ3OPRIK5JL7FQDX6KGZLVLCR2UTAJ6AMYTBAK3KCMLRR` | `Checked proportional refund math.` |
+| `4` | `Dave Relief` | `dave@example.com` | `GKLMS5IIZGPXN3SSNUPLZSXBX33TI5LKDN5GBQ3FXCPTPOYDEODECGNF` | `Uploaded proof receipts successfully.` |
+| `5` | `Eve Supporter` | `eve@example.com` | `GNOPVAR2TXID6P6AOJH775X4WWQGQVCWMWVUDXEQXLKP7SDEZJQMI2X5` | `Suggested UI improvements for dashboard.` |
+
 
 ### Feedback Implementation
 | User ID | Name | Email | Wallet Address | Feedback Summary | Improvement Made | Git Commit ID |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `1` | `Amit Sharma` | `amit1993sharma@gmail.com` | `G8J2Y4AUPZUF578990MR6W07YH7S5THG2DMN2PMLJHHGFD7VG4IL586X` | `The UI design is very sleek and premium` | Added Creator Trust Score UI badge | [`237fc00`](https://github.com/prashant45667/AegisFunds/commit/237fc00) |
-| `2` | `Neha Patel` | `nehapatel2504@gmail.com` | `GJLPSI7GZHO1F9OSLOZGHLHCVDDEK085Q71BZNAI5Z2NBFCEENEF5VYN` | `Transparency of milestones and receipt proofs` | Added Verified NGO flag to campaign deployer | [`8b9281b`](https://github.com/prashant45667/AegisFunds/commit/8b9281b) |
-| `3` | `Rahul Singh` | `007rahulsingh@gmail.com` | `GJWWI1A30LGNXD3E8AHUZG2S1ZRQLGJY18TPR9F0JD0RQWXDCVV7FY8S` | `Escrow campaign management is seamless` | Optimized active campaign list rendering | [`4d4e437`](https://github.com/prashant45667/AegisFunds/commit/4d4e437) |
-| `4` | `Pooja Gupta` | `pooja1234gupta@gmail.com` | `G7GDNYCUWVU0FO8NM4AU89345N2L9EUNCL9SEFFCZX8YR8JQO8TSKYKU` | `Really fast transaction confirmation on Freighter` | Built interactive milestone timeline component | [`af32467`](https://github.com/prashant45667/AegisFunds/commit/af32467) |
-| `5` | `Sanjay Yadav` | `sanjayyadav99@gmail.com` | `GEUNO7KZSYV06G8HF1E867ZLJJZ8DPR74KO4SLVO3CP7VA5USNOOAMUD` | `The dark mode theme and general aesthetics` | Added real-time notification toasts for proofs | [`80b9e3f`](https://github.com/prashant45667/AegisFunds/commit/80b9e3f) |
-| `6` | `Kavita Tiwari` | `kavita1508tiwari@gmail.com` | `GLDR5GO2QUP4W35MJB7B43IVLEQ33DGFGYZ1Q1NEKPP6HO6U4PIHGICM` | `Ability to verify NGOs easily` | Fixed Horizon wallet balance checking logic | [`323430e`](https://github.com/prashant45667/AegisFunds/commit/323430e) |
+| `TBD` | `TBD` | `TBD` | `TBD` | `TBD` | `TBD` | `TBD` |
 
 ### Feedback Collection & Survey Data
 
