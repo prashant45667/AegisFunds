@@ -193,7 +193,7 @@ export const CreateCampaign: React.FC<CreateCampaignProps> = ({ address, onSucce
         </div>
 
         <div className="border-t border-white/5 pt-5">
-          <div className="flex items-center justify-between gap-4 mb-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
             <div>
               <label className="block text-sm font-semibold text-gray-300">Total Goal (XLM)</label>
               <p className="text-xs text-gray-400">Milestone portions must sum up to this goal</p>
@@ -201,7 +201,7 @@ export const CreateCampaign: React.FC<CreateCampaignProps> = ({ address, onSucce
             <input
               type="number"
               min="1"
-              className="w-32 px-4 py-2 rounded-lg glass-input text-sm font-bold text-right"
+              className="w-full sm:w-32 px-4 py-2 rounded-lg glass-input text-sm font-bold text-right"
               value={goal}
               onChange={(e) => setGoal(Number(e.target.value))}
               required
@@ -221,7 +221,7 @@ export const CreateCampaign: React.FC<CreateCampaignProps> = ({ address, onSucce
             </div>
 
             {milestones.map((m, index) => (
-              <div key={index} className="flex items-center gap-3">
+              <div key={index} className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="text"
                   placeholder={`Milestone #${index + 1} Title`}
@@ -230,23 +230,25 @@ export const CreateCampaign: React.FC<CreateCampaignProps> = ({ address, onSucce
                   onChange={(e) => handleMilestoneChange(index, 'title', e.target.value)}
                   required
                 />
-                <input
-                  type="number"
-                  placeholder="Amount"
-                  className="w-24 px-3 py-2 rounded-lg glass-input text-xs text-right font-semibold"
-                  value={m.amount || ''}
-                  onChange={(e) => handleMilestoneChange(index, 'amount', e.target.value)}
-                  required
-                />
-                {milestones.length > 1 && (
-                  <button
-                    type="button"
-                    onClick={() => handleRemoveMilestone(index)}
-                    className="p-2 text-rose-400 hover:bg-rose-500/10 rounded-lg transition-all"
-                  >
-                    <Trash2 className="h-4 w-4" />
-                  </button>
-                )}
+                <div className="flex gap-2 w-full sm:w-auto">
+                  <input
+                    type="number"
+                    placeholder="Amount"
+                    className="flex-1 sm:w-24 px-3 py-2 rounded-lg glass-input text-xs text-right font-semibold"
+                    value={m.amount || ''}
+                    onChange={(e) => handleMilestoneChange(index, 'amount', e.target.value)}
+                    required
+                  />
+                  {milestones.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => handleRemoveMilestone(index)}
+                      className="p-2 text-rose-400 hover:bg-rose-500/10 rounded-lg transition-all shrink-0"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  )}
+                </div>
               </div>
             ))}
           </div>

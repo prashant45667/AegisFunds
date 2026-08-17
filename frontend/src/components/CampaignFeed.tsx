@@ -158,7 +158,7 @@ export const CampaignFeed: React.FC<CampaignFeedProps> = ({ campaigns, onSelectC
                   </div>
 
                   {/* Milestones Snapshot */}
-                  <div className="grid grid-cols-2 gap-4 p-3 bg-white/5 rounded-xl border border-white/5 mb-5 text-xs">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-3 bg-white/5 rounded-xl border border-white/5 mb-5 text-xs">
                     <div>
                       <p className="text-gray-400 mb-0.5">Milestone Proofs</p>
                       <div className="flex items-center gap-1.5 font-semibold text-white">

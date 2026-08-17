@@ -52,29 +52,29 @@ export const WalletConnect: React.FC<WalletConnectProps> = ({ address, setAddres
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-4 glass-card border border-white/10 mb-8">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-4 glass-card border border-white/10 mb-8">
       <div className="flex items-center gap-4">
-        <div className="p-3 bg-blue-500/10 text-blue-400 rounded-xl border border-blue-500/20">
+        <div className="p-3 bg-blue-500/10 text-blue-400 rounded-xl border border-blue-500/20 shrink-0">
           <Wallet className="h-6 w-6" />
         </div>
-        <div>
+        <div className="min-w-0">
           <h2 className="text-lg font-semibold font-outfit text-white">Wallet Connection</h2>
           {address ? (
-            <div className="flex items-center gap-2 mt-1">
+            <div className="flex flex-wrap items-center gap-2 mt-1">
               <span className="text-sm font-mono text-gray-400">{shortenAddress(address)}</span>
               <span className="text-xs px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 border border-teal-500/30">
                 {balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} XLM
               </span>
             </div>
           ) : (
-            <p className="text-sm text-gray-400">Connect Freighter wallet to contribute or manage campaigns</p>
+            <p className="text-xs sm:text-sm text-gray-400 mt-1 pr-2">Connect Freighter wallet to contribute or manage campaigns</p>
           )}
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="flex flex-col sm:flex-row w-full md:w-auto items-stretch sm:items-center gap-3 mt-2 md:mt-0">
         {/* Network status indicator */}
-        <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border bg-teal-600/15 text-teal-400 border-teal-500/30">
+        <span className="flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg text-xs font-semibold border bg-teal-600/15 text-teal-400 border-teal-500/30">
           <Network className="h-4 w-4" />
           Network: Stellar Testnet
         </span>
@@ -82,7 +82,7 @@ export const WalletConnect: React.FC<WalletConnectProps> = ({ address, setAddres
         {!address ? (
           <button
             onClick={handleConnect}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
+            className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
             Connect Freighter
           </button>
@@ -92,7 +92,7 @@ export const WalletConnect: React.FC<WalletConnectProps> = ({ address, setAddres
               setAddress('');
               setBalance(0);
             }}
-            className="px-4 py-2 rounded-lg text-xs font-bold bg-red-500/10 text-red-400 border border-red-500/30 hover:bg-red-500/20 transition-all"
+            className="px-4 py-2 rounded-lg text-xs font-bold bg-red-500/10 text-red-400 border border-red-500/30 hover:bg-red-500/20 transition-all text-center"
           >
             Disconnect
           </button>

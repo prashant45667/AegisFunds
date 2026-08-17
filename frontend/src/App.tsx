@@ -91,7 +91,7 @@ function App() {
       
       {/* In-app Notification Banner */}
       {notification && (
-        <div className="fixed top-20 right-4 z-[100] max-w-sm glass-card border border-teal-500/30 p-4 bg-[#0F1D2A]/95 shadow-2xl animate-in slide-in-from-right-5 duration-300 rounded-xl">
+        <div className="fixed top-20 left-4 right-4 sm:left-auto sm:w-full sm:max-w-sm z-[100] glass-card border border-teal-500/30 p-4 bg-[#0F1D2A]/95 shadow-2xl animate-in slide-in-from-right-5 duration-300 rounded-xl">
           <div className="flex items-start gap-3">
             <div className="p-2 bg-teal-500/10 text-teal-400 rounded-lg">
               <Shield className="h-5 w-5" />
@@ -236,7 +236,7 @@ function App() {
               <Activity className="h-5 w-5 text-white" />
             </div>
             <div>
-              <span className="text-xl font-extrabold font-outfit tracking-tight text-white">Veri<span className="text-gradient">Fund</span></span>
+              <span className="text-xl font-extrabold font-outfit tracking-tight text-white">Aegis<span className="text-gradient">Fund</span></span>
               <p className="text-[10px] text-gray-400 font-semibold tracking-wider uppercase">Soroban Crowdfunding Escrow</p>
             </div>
           </div>
