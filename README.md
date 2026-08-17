@@ -5,10 +5,10 @@ AegisFund is a production-ready, milestone-based crowdfunding escrow platform de
 It addresses donor trust and fundraising fraud by replacing the traditional lump-sum release model with a conditional milestone-based escrow. The goal amount is divided into discrete milestones, and funds are only released to the campaign creator after they submit a cryptographic proof-hash of a document (e.g. medical bills, surgery receipts) on-chain. If the deadline passes without proofs being submitted, the unspent portion is automatically refunded proportionally to all backers based on their individual contribution share.
 
 ### 🔗 Quick Links
-- **Live Deployed Website**: [veri-fund-delta.vercel.app](https://veri-fund-delta.vercel.app/)
-- **Live Demo Video Walkthrough**: [Google Photos Demo Video](https://photos.app.goo.gl/yTxxo6vWPnDnPF1Z7)
-- **User Onboarding Feedback Form**: [Google Form](https://docs.google.com/forms/d/1-unjNsP5OzAESlHGkuoQBL9c3ZnG40KaNeHT-B4uEYY/edit)
-- **Onboarded Users Feedback Responses**: [Google Response Sheet](https://docs.google.com/spreadsheets/d/1mlCpVn_BjrrU_yev91L6Pw2tY5rI1Gajb2WAStx9h9g/edit?usp=sharing)
+- **Live Deployed Website**: [aegis-funds.vercel.app](https://aegis-funds.vercel.app/)
+- **Live Demo Video Walkthrough**: [Google Photos Demo Video](https://photos.app.goo.gl/8cKfxg3d1EkZ8MH2A)
+- **User Onboarding Feedback Form**: [Google Form](https://docs.google.com/forms/d/1Kx2lBNVd8E4IElMWg1bYa99yuVVulNBXa70_si6xcNw/viewform)
+- **Onboarded Users Feedback Responses**: [Google Response Sheet](https://docs.google.com/spreadsheets/d/1u66OStCGq-1l5MdMBfApQkTr-exKZokqPFQ_jlVCBRY/edit?usp=sharing)
 
 ---
 
